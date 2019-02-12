@@ -11,13 +11,17 @@ public class Java_Statement {
 		for(;;) {
 			System.out.println("----------마름모 만들기-----------");
 			System.out.println("아래의 숫자 중 출력을 원하는 마름모 사이즈를 선택해주세요");
-			System.out.println("3, 5, 7, 9");
+			System.out.println("1, 2, 3, 4");
 			System.out.print("입력 : ");
 			int select = scan.nextInt();
 			scan.nextLine();
 				
+		// 입력받은 숫자에 따른 조건문 
+			switch (select) {
+			case 1 : 
 		// 입력받은 숫자에 따른 배열 생성 및 마름모 구현
-				String[][] arr1 = new String[select][select];
+		
+				
 				System.out.println(select + " 크기 마름모를 선택하셨습니다.");
 				System.out.println("------------------------------");
 				
@@ -39,6 +43,17 @@ public class Java_Statement {
 					System.out.println(); //줄바꿈
 				}
 				
+			case 2 :
+			case 3 :
+			case 4 :
+			default :
+				
+				
+			}
+		
+			
+			
+
 		}
 		
 	}
